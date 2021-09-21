@@ -1,4 +1,4 @@
-rootProject.name = "Resourcy"
+rootProject.name = "resourcy"
 rootDir.walk()
     .maxDepth(1)
     .filter { file ->
