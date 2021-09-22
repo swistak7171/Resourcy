@@ -1,4 +1,5 @@
 plugins {
+    id(Plugins.MAVEN)
     id(Plugins.DOKKA) version (Versions.DOKKA)
 }
 
