@@ -1,1 +1,1 @@
-# resourcy
+# Resourcy

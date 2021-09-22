@@ -17,6 +17,9 @@ buildscript {
 }
 
 allprojects {
+    group = Configuration.GROUP
+    version = Configuration.VERSION_NAME
+
     repositories {
         google()
         mavenCentral()
