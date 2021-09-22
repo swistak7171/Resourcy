@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_value_string" />
+    <string-array name="default_value_string_array" />
+    <plurals name="default_value_plurals">
+        <item quantity="other" />
+    </plurals>
+</resources>
