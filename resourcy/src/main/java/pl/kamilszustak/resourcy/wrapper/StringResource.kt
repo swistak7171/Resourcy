@@ -2,11 +2,17 @@ package pl.kamilszustak.resourcy.wrapper
 
 import android.content.Context
 import androidx.annotation.StringRes
+import pl.kamilszustak.resourcy.R
 
 data class StringResource(
     @StringRes override val id: Int,
     val arguments: Array<Any> = emptyArray(),
 ) : Resource<String>() {
+
+    companion object : HasDefaultValue<String> {
+        override val default: Resource<String>
+            get() = StringResource(R.string.default_value_string)
+    }
 
     override fun get(context: Context): String {
         return if (arguments.isEmpty()) {

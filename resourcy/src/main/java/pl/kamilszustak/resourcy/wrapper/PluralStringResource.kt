@@ -2,12 +2,18 @@ package pl.kamilszustak.resourcy.wrapper
 
 import android.content.Context
 import androidx.annotation.PluralsRes
+import pl.kamilszustak.resourcy.R
 
 data class PluralStringResource(
     @PluralsRes override val id: Int,
     val quantity: Int,
     override val arguments: Array<Any> = emptyArray(),
 ) : ResourceWithArguments<String>() {
+
+    companion object : HasDefaultValue<String> {
+        override val default: Resource<String>
+            get() = PluralStringResource(R.plurals.default_value_plurals, 0)
+    }
 
     override fun get(context: Context): String {
         return if (arguments.isEmpty()) {
