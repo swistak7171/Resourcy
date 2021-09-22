@@ -7,5 +7,5 @@ object Plugins {
     const val KOTLIN_ANDROID: String = "$JETBRAINS_KOTLIN.android"
     const val KTLINT: String = "org.jlleitschuh.gradle.ktlint"
     const val DOKKA: String = "org.jetbrains.dokka"
-    const val MAVEN: String = "maven"
+    const val MAVEN_PUBLISH: String = "maven-publish"
 }
